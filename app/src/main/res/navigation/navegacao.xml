@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacao"
+    app:startDestination="@id/inicioo">
+
+    <fragment
+        android:id="@+id/listaObras"
+        android:name="com.example.trabalho32.ListaObras"
+        android:label="ListaObras"
+        tools:layout="@layout/fragment_lista_obras"
+        >
+        <action
+            android:id="@+id/action_listaObras_to_inicioo"
+            app:destination="@id/inicioo" />
+        <action
+            android:id="@+id/action_listaObras_to_descricaoPint"
+            app:destination="@id/descricaoPint" />
+    </fragment>
+    <fragment
+        android:id="@+id/inicioo"
+        android:name="com.example.trabalho32.Inicioo"
+        android:label="fragment_inicioo"
+        tools:layout="@layout/fragment_inicioo" >
+        <action
+            android:id="@+id/action_inicioo_to_listaObras"
+            app:destination="@id/listaObras" />
+    </fragment>
+    <fragment
+        android:id="@+id/descricaoPint"
+        android:name="com.example.trabalho32.DescricaoPint"
+        android:label="DescricaoPint" >
+        <action
+            android:id="@+id/action_descricaoPint_to_listaObras"
+            app:destination="@id/listaObras" />
+    </fragment>
+    <fragment
+        android:id="@+id/descricaoPint2"
+        android:name="com.example.trabalho32.DescricaoPint2"
+        android:label="DescricaoPint2" >
+        <action
+            android:id="@+id/action_descricaoPint2_to_listaObras"
+            app:destination="@id/listaObras" />
+    </fragment>
+    <fragment
+        android:id="@+id/descricaoPint3"
+        android:name="com.example.trabalho32.DescricaoPint3"
+        android:label="DescricaoPint3" >
+        <action
+            android:id="@+id/action_descricaoPint3_to_listaObras"
+            app:destination="@id/listaObras" />
+    </fragment>
+    <fragment
+        android:id="@+id/descricaoPint4"
+        android:name="com.example.trabalho32.DescricaoPint4"
+        android:label="DescricaoPint4" >
+        <action
+            android:id="@+id/action_descricaoPint4_to_listaObras"
+            app:destination="@id/listaObras" />
+    </fragment>
+    <fragment
+        android:id="@+id/addObra"
+        android:name="com.example.trabalho32.addObra"
+        android:label="fragment_add_obra"
+        tools:layout="@layout/fragment_add_obra" />
+    <fragment
+        android:id="@+id/gerenObras2"
+        android:name="com.example.trabalho32.GerenObras"
+        android:label="fragment_geren_obras"
+        tools:layout="@layout/fragment_geren_obras" >
+        <action
+            android:id="@+id/action_gerenObras2_to_addObra"
+            app:destination="@id/addObra" />
+        <action
+            android:id="@+id/action_gerenObras2_to_obras_add_teste"
+            app:destination="@id/obras_add_teste" />
+    </fragment>
+    <fragment
+        android:id="@+id/obras_add_teste"
+        android:name="com.example.trabalho32.obras_add_teste"
+        android:label="fragment_obras_add_teste"
+        tools:layout="@layout/fragment_obras_add_teste" />
+</navigation>

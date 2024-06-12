@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/Background"
+    android:padding="16dp"
+    android:id="@+id/descricaopint">
+
+
+    <Button
+        android:id="@+id/btvoltar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="VOLTAR"
+        app:layout_constraintBottom_toTopOf="@+id/pesquisa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        android:layout_marginRight="125dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/artworkImageView"
+        android:layout_width="259dp"
+        android:layout_height="261dp"
+        android:layout_marginTop="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imgtest3">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:text="Amor e Ódio - 1820"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/autorTextView"
+        android:text="Monalisa"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:text="Essa obra foi nomeada 'Amor e Ódio' por simbolizar como a noite e o dia da autora Monalisa via quando ia dormir."
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/audiodescricao"
+        android:layout_width="56dp"
+        android:layout_height="65dp"
+        android:src="@drawable/playbtblue2" />
+
+</LinearLayout>

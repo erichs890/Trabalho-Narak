@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/Background"
+    tools:context=".MarcarVisit">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marcar Visita"
+        android:textSize="25sp"
+        android:textColor="@color/UniLogo"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:layout_margin="40dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:cardBackgroundColor="@color/white"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:textSize="18sp"
+            android:textColor="@color/UniLogo"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:cardBackgroundColor="@color/white"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hora"
+            android:textSize="18sp"
+            android:textColor="@color/UniLogo"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:timePickerMode="spinner"
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha o tipo de visita"
+        android:textSize="18sp"
+        android:textColor="@color/UniLogo"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_margin="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp">
+
+        <CheckBox
+            android:id="@+id/visitaguiada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visita Guiada"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_semibold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp">
+
+        <CheckBox
+            android:id="@+id/visitacego"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visita com Intérprete de Libras"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_semibold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp">
+
+        <CheckBox
+            android:id="@+id/visitaingles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visita com Guia Bilíngue"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_semibold"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btAgendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agendar"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_semibold"
+        android:backgroundTint="@color/UniLogo"
+        app:cornerRadius="20dp"
+        android:layout_margin="40dp"
+        />
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="34dp"
+    android:paddingEnd="34dp"
+    tools:context=".Configuracoes"
+    android:background="@color/backconfigs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/languageLabel"
+            android:layout_margin="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zoom"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_semibold"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style = "@style/CustomSpinner"
+            android:layout_margin="5dp"
+            android:layout_marginVertical="590dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/languageLabel"
+            />
+
+        <TextView
+            android:id="@+id/fontlabel"
+            android:layout_margin="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tamanho da Fonte"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_semibold"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            style = "@style/CustomSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/languageLabel"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "706034728329",
+    "project_id": "trabalhoespacocultural",
+    "storage_bucket": "trabalhoespacocultural.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706034728329:android:a9bc2ec7a1bbcf7f647558",
+        "android_client_info": {
+          "package_name": "com.example.trabalho32"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHxDvwL_Fo-C7aSr3-l-9uZLPACUavIfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

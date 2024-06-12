@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#1e9df1</color>
+    <color name="UniLogo">#004af5</color>
+    <color name="BarColor">#e8f0fe</color>
+    <color name="Background">#daefff</color>
+    <color name="backconfigs">#d9d9d9</color>
+
+</resources>
